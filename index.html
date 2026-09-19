@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Souhaieb Elamri — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+  <nav>
+    <h2 class="logo">Souhaieb<span>.</span></h2>
+    <ul>
+    <li><a href="#accueil">Accueil</a></li>
+    <li><a href="#projets">Projets</a></li>
+    <li><a href="#certificats">Certificats</a></li>
+    <li><a href="#badges">Badges</a></li>
+    <li><a href="#cv">CV</a></li>
+    <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Section héro (accueil) -->
+  <section id="accueil" class="hero">
+    <div class="hero-inner">
+
+      <div class="hero-photo">
+        <div class="photo-ring">
+          <img src="myimage.jpeg" alt="Souhaieb Elamri">
+        </div>
+        <span class="float-chip chip-1">👁️ Computer Vision</span>
+        <span class="float-chip chip-2">🤖 Robotique</span>
+        <span class="float-chip chip-3">⚙️ Systèmes Embarqués</span>
+      </div>
+
+      <div class="hero-texte">
+        <p class="hero-sur">Portfolio</p>
+        <h1>JE <span class="gris">SUIS</span><br>SOUHAIEB<br>ELAMRI<span class="point">.</span></h1>
+        <p class="hero-role">Electrical Engineer | Computer Vision &amp; Industrial Automation</p>
+
+        <ul class="hero-etudes">
+          <li><strong>Élève ingénieur</strong> en Génie Électrique — ENSIT <em>(2025–2027)</em></li>
+          <li><strong>Titulaire d'un Master</strong> en Robotique Avancée &amp; Intelligence Artificielle — ISET Bizerte <em>(2023–2025)</em></li>
+          <li><strong>Licence</strong> en Génie Électrique, Automatisation Industrielle — ISET Nabeul <em>(2020–2023)</em></li>
+        </ul>
+
+        <p class="hero-desc">
+          Titulaire d'un Master en Robotique Avancée et IA, je conçois des systèmes intelligents
+          qui relient vision par ordinateur, IA et automatisation industrielle, du prototype
+          embarqué jusqu'au déploiement en production.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#projets" class="btn">Voir mes projets</a>
+          <a href="#cv" class="btn btn-outline">Mon CV</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>6</strong><span>Projets</span></div>
+          <div><strong>6</strong><span>Certificats</span></div>
+          <div><strong>5</strong><span>Badges</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section projets -->
+  <section id="projets">
+    <h2 class="titre-section">Mes Projets <small>(cliquez pour plus de détails)</small></h2>
+    <div class="grille grille-projets">
+      <div class="carte carte-projet reveal" data-galerie="garment" role="button" tabindex="0">
+        <span class="projet-icone">📏</span>
+        <h3>Garment Measurement</h3>
+        <span class="projet-indice">Voir les détails</span>
+        <div class="projet-detail">
+          <p>Système de vision par ordinateur pour la mesure de vêtements en temps réel sur ligne de production, avec une précision de ±0.3cm. Détection d'objets, calibration caméra et interface Tkinter, entraînement accéléré sur GPU.</p>
+          <div class="tags">
+            <span class="tag">OpenCV</span>
+            <span class="tag">Object Detection</span>
+            <span class="tag">Camera Calibration</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">CUDA</span>
+            <span class="tag">Tkinter</span>
+            <span class="tag">Docker</span>
+            <span class="tag">SQL Server</span>
+          </div>
+          <span class="galerie-lien">📷 Voir les captures du projet</span>
+        </div>
+      </div>
+      <div class="carte carte-projet reveal" data-galerie="robot" role="button" tabindex="0">
+        <span class="projet-icone">🤖</span>
+        <h3>Robot Mobile</h3>
+        <span class="projet-indice">Voir les détails</span>
+        <div class="projet-detail">
+          <p>Robot mobile piloté par STM32, avec liaison Bluetooth et WiFi, contrôle moteur PWM, communication USART et I2C, acquisition de capteurs en temps réel et supervision via Node-RED et ThingSpeak.</p>
+          <div class="tags">
+            <span class="tag">STM32</span>
+            <span class="tag">Keil</span>
+            <span class="tag">USART</span>
+            <span class="tag">I2C</span>
+            <span class="tag">PWM</span>
+            <span class="tag">Bluetooth</span>
+            <span class="tag">WiFi</span>
+            <span class="tag">Node-RED</span>
+            <span class="tag">ThingSpeak</span>
+          </div>
+          <span class="galerie-lien">📷 Voir les captures du projet</span>
+        </div>
+      </div>
+      <div class="carte carte-projet reveal">
+        <span class="projet-icone">🙂</span>
+        <h3>Facial Recognition</h3>
+        <span class="projet-indice">Voir les détails</span>
+        <div class="projet-detail">
+          <p>Reconnaissance faciale en temps réel avec InsightFace, précision de 95%, stockage des données en SQL Server, déployée en conteneur Docker.</p>
+          <div class="tags">
+            <span class="tag">InsightFace</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">SQL Server</span>
+            <span class="tag">Docker</span>
+          </div>
+        </div>
+      </div>
+      <div class="carte carte-projet reveal">
+        <span class="projet-icone">🪞</span>
+        <h3>Virtual Garment Try-On</h3>
+        <span class="projet-indice">Voir les détails</span>
+        <div class="projet-detail">
+          <p>Essayage virtuel et mesure corporelle avec CatVTON (Stable Diffusion via Hugging Face), interface Streamlit et WebRTC, détection et segmentation YOLO11-Pose, calibration ArUco pour la conversion pixel/cm.</p>
+          <div class="tags">
+            <span class="tag">CatVTON</span>
+            <span class="tag">Hugging Face</span>
+            <span class="tag">YOLO11</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">WebRTC</span>
+          </div>
+        </div>
+      </div>
+      <div class="carte carte-projet reveal" data-galerie="ticket" role="button" tabindex="0">
+        <span class="projet-icone">🧾</span>
+        <h3>Ticket Detection</h3>
+        <span class="projet-indice">Voir les détails</span>
+        <div class="projet-detail">
+          <p>Application déployée en production, conteneurisée avec Docker, pour la détection et la classification automatique de différents types de fiches de production. Le système extrait les informations clés de chaque ticket (préparation, quantité article, nombre de caisses) grâce à la détection YOLO11, un classifieur SVM et l'OCR DocTR, avec un backend FastAPI et une interface Streamlit.</p>
+          <div class="tags">
+            <span class="tag">YOLO11</span>
+            <span class="tag">SVM</span>
+            <span class="tag">DocTR OCR</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">Docker</span>
+            <span class="tag">SQL Server</span>
+          </div>
+          <span class="galerie-lien">📷 Voir les captures du projet</span>
+        </div>
+      </div>
+      <div class="carte carte-projet reveal" data-galerie="tri" role="button" tabindex="0">
+        <span class="projet-icone">🦾</span>
+        <h3>Tri de Pièces par Couleur</h3>
+        <span class="projet-indice">Voir les détails</span>
+        <div class="projet-detail">
+          <p>Cellule industrielle simulée sous Factory I/O et programmée sur TIA Portal (Siemens S7-PLCSIM) : un bras Pick & Place à 2 axes trie les pièces par couleur sur convoyeur, effectue leur marquage, puis les dépose dans les caisses correspondantes. Processus industriel complet, de la détection à l'emballage.</p>
+          <div class="tags">
+            <span class="tag">TIA Portal</span>
+            <span class="tag">Factory I/O</span>
+            <span class="tag">Siemens S7-PLCSIM</span>
+            <span class="tag">Ladder Logic</span>
+            <span class="tag">Pick & Place</span>
+            <span class="tag">Tri par Couleur</span>
+          </div>
+          <span class="galerie-lien">📷 Voir les captures du projet</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section certificats -->
+  <section id="certificats">
+    <h2 class="titre-section">Certificats <small>(cliquez pour voir les certificats)</small></h2>
+    <div class="grille">
+      <a class="carte carte-cert reveal" href="certs/ai900-azure-ai-fundamentals.pdf" target="_blank">
+        <h3>Microsoft Certified: Azure AI Fundamentals (AI-900)</h3>
+        <p>Microsoft · délivré le 13/05/2024</p>
+      </a>
+      <a class="carte carte-cert reveal" href="certs/sc900-security-compliance-identity.pdf" target="_blank">
+        <h3>Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900)</h3>
+        <p>Microsoft · délivré le 11/11/2024</p>
+      </a>
+      <a class="carte carte-cert reveal" href="certs/six-sigma-yellow-belt.pdf" target="_blank">
+        <h3>Six Sigma Yellow Belt</h3>
+        <p>6sigmastudy (VMEdu) · délivré le 13/01/2025</p>
+      </a>
+      <a class="carte carte-cert reveal" href="certs/hp-life-data-science-analytics.pdf" target="_blank">
+        <h3>Data Science & Analytics</h3>
+        <p>HP LIFE · délivré le 15/09/2024</p>
+      </a>
+      <a class="carte carte-cert reveal" href="certs/ibm-excel-essentials-badge.pdf" target="_blank">
+        <h3>Excel Essentials for Data Analytics</h3>
+        <p>IBM (via Coursera) · délivré le 26/09/2024</p>
+      </a>
+      <a class="carte carte-cert reveal" href="certs/ibm-excel-basics-coursera.pdf" target="_blank">
+        <h3>Excel Basics for Data Analysis</h3>
+        <p>IBM (via Coursera) · délivré le 26/09/2024</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Section badges -->
+  <section id="badges">
+    <h2 class="titre-section">Badges</h2>
+    <div class="grille grille-badges">
+      <div class="badge reveal">
+        <img src="I2CS__1_.png" alt="Cisco Introduction to Cybersecurity badge" class="badge-img">
+        <p>Introduction to Cybersecurity · Cisco Networking Academy</p>
+      </div>
+      <div class="badge reveal">
+        <img src="I2CS__1_.png" alt="Security badge" class="badge-img">
+        <p>Security, Compliance & Identity Fundamentals · Microsoft (SC-900)</p>
+      </div>
+      <div class="badge reveal">
+        <span class="badge-fallback">☁️</span>
+        <p>Azure AI Fundamentals · Microsoft (AI-900)</p>
+      </div>
+      <div class="badge reveal">
+        <span class="badge-fallback">🟡</span>
+        <p>Six Sigma Yellow Belt · 6sigmastudy</p>
+      </div>
+      <div class="badge reveal">
+        <span class="badge-fallback">📊</span>
+        <p>Excel Essentials for Data Analytics · IBM</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section CV -->
+  <section id="cv">
+    <h2 class="titre-section">Mon CV</h2>
+    <div class="cv-container">
+      <iframe src="cv.pdf" class="cv-frame" title="CV Souhaieb Elamri"></iframe>
+      <a href="cv.pdf" download class="btn btn-cv">⬇️ Télécharger le CV</a>
+    </div>
+  </section>
+
+  <!-- Section contact -->
+  <footer id="contact">
+    <h2>Contact</h2>
+    <p>📧 souhaiebelamri78@gmail.com</p>
+    <p>💼 <a href="https://linkedin.com/in/souhaieb-elamri" target="_blank">LinkedIn</a> | 
+       💻 <a href="https://github.com/Thedreamersou" target="_blank">GitHub</a></p>
+  </footer>
+
+  <!-- Galerie projet (fenêtre modale) -->
+  <div class="galerie" id="galerie" role="dialog" aria-modal="true" aria-labelledby="galerie-titre" hidden>
+    <div class="galerie-fond" data-fermer></div>
+    <div class="galerie-boite">
+      <button class="galerie-fermer" type="button" aria-label="Fermer" data-fermer>&times;</button>
+      <h3 id="galerie-titre" class="galerie-titre"></h3>
+      <p class="galerie-intro"></p>
+      <div class="galerie-liste"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
